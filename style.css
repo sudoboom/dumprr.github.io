@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    font-family: 'Ubuntu', sans-serif;;
+    background-color: indigo;
+    background-image: url(images/BG-t.png); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    text-align: center;
+    color: mintcream;
+}
+h1 {
+    color: lavenderblush;
+    font-size: 45px;
+}
+p {
+    color: mintcream;
+    font-size: 25px;
+}
+img {
+    border-radius: 8px;
+}
+/* This sets the colors for all hyperlinks */
+a:link {
+    color: rgb(162, 169, 238);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(153, 120, 230);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(91, 72, 177);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgb(208, 249, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+/* W3 SCHOOLS ONTOP I LOVE W3SCHOOLS */
