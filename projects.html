@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<div id="VantaBackground">
+
 <h1 style="padding-top: 20px; padding-bottom: 20px; background-color: rgb(138, 43, 226, 0.5); border-style: dashed; border-radius: 15px;"><a class="quick" href="index.html">Home</a> | <a class="quick" href="projects.html">Projects</a> | <a class="quick" href="about.html">About/More</a></h1>
 <p></b></p>
 <h2 style="padding-top: 20px; padding-bottom: 20px;"> Here are some cool things you should click on..</h2>
@@ -19,6 +21,34 @@
 <p>.. there's more on my github .. </p>
 <h2 style="padding-top: 100px;"> <a href="parallax.html" target="_blank">Joyboy Has Returned!</a> </h2>
 <img src="images/favicon.gif" alt="mario breakdancing">
+
+<footer>
+    <p style="font-size: 15px;"><br>Background provided by <a href="https://github.com/tengbao/vanta">VantaJS</a></p>
+</footer>
+</div>
+
+<!-- Vanta JS Backgrounds Code -->
+<script src="cdn/three.min.js"></script>
+<script src="cdn/vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#VantaBackground",
+  mouseControls: true,
+  touchControls: false,
+  gyroControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x9e1adc,
+  points: 16.00,
+  maxDistance: 24.00
+})
+</script>
+<!-- Vanta JS Backgrounds Code -->
+
+
+
 </body>
 </html>
 
