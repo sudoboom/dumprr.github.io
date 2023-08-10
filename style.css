@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Ubuntu&display=swap');
 body {
     font-family: 'Ubuntu', sans-serif;;
     background-color: #23153c;
 }
+
 body {
   margin: 0;
 }
