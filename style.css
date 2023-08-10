@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 body {
     font-family: 'Ubuntu', sans-serif;;
-    background-color: indigo;
-    background-image: url(images/BG-t.png); 
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #23153c;
 }
 body {
   margin: 0;
 }
 
-body { overflow: hidden; }
+
 #VantaBackground {
   width: 100%;
   height: 100vh;
@@ -18,7 +15,7 @@ body { overflow: hidden; }
 * {
     text-align: center;
     color: mintcream;
-    text-shadow: 2px 2px 2px #1c0c46;
+    text-shadow: 3px 3px 2px #1c0c46;
 }
 h1 {
     color: lavenderblush;
@@ -67,6 +64,6 @@ a:link {
   }
   a /*this just sets the transition yup*/ {
     transition: color 0.3s ease;
-    text-shadow: 2px 2px 20px #1c0c46;
+    text-shadow: 3px 3px 20px #1c0c46;
   }
 /* W3 SCHOOLS ONTOP I LOVE W3SCHOOLS */
