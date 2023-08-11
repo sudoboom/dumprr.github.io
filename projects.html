@@ -3,20 +3,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon2.png">
     <style>
+      p {
+        font-size: 20px;
+      }
     </style>
 <title>Dumprr's Projects</title>
 </head>
 <body>
 
-<div id="VantaBackground">
 
-<h1 style="padding-top: 20px; padding-bottom: 20px; background-color: rgb(138, 43, 226, 0.5); border-style: dashed; border-radius: 15px;"><a class="quick" href="index.html">Home</a> | <a class="quick" href="projects.html">Projects</a> | <a class="quick" href="about.html">About/More</a></h1>
-<p></b></p>
+  <h1 style="padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; background-color: rgb(138, 43, 226, 0.5); border-style: dashed; border-radius: 15px;">   <a class="quick" href="index.html">Home</a> | <a class="quick" href="projects.html">Projects</a> | <a class="quick" href="about.html">About/More</a></h1>
 <!--Epic Glitch Headers-->
-<h2 style="font-size: 40px; font-family: 'Courier Prime', monospace; color: #ff00ff; text-shadow: -2px 0 #00ff00, 2px 0 #0000ff; animation: glitch 2s infinite; padding-top: 20px; ">
+<h2 style="padding-bottom: 20px; font-size: 40px; font-family: 'Courier Prime', monospace; color: #ff00ff; text-shadow: -2px 0 #00ff00, 2px 0 #0000ff; animation: glitch 2s infinite;">
   here are some of my projects 👨‍💻...
 </h2>
-<p style="font-size: 20px; font-family: 'Courier Prime', monospace; padding-bottom: 30px;" > <b>listed coolest to not so coolest...</b> </p>
+
 <style>
 @keyframes glitch {
   0% {
@@ -39,39 +40,54 @@
 <!--End of epic glitch header sorry :(-->
 
 <p><img src="images/linearsHD.png" alt="Itch.io Logo" style="float:none;width:40px;height:40px;"> Linear Pirates | made for <a href="https://itch.io/jam/my-first-game-jam-summer-2023" target="_blank">"MFGJ Summer '23" </a>| <a href="https://dumprr.itch.io/pirates" target="_blank">Play It</a> </p>
-<p><img src="images/loidicon.png" alt="LOID Logo" style="float:none;width:35px;height:35px;"> LOID | Simple platformer made in Scratch | Unreleased </p>
+<p><img src="images/loidicon.png" alt="LOID Logo" style="float:none;width:35px;height:35px;"> LOID | Simple platformer made in Scratch | <a href="https://dumprr.itch.io/loid" target="_blank">Play It</a> </p>
 <p><img src="images/discord.png" alt="Discord Logo" style="float:none;width:35px;height:26px;"> Sentaku | Multipurpose Discord.js Bot | <a href="https://github.com/dumprr/Sentaku" target="_blank">GitHub Repo</a> (With Guide) </p>
 <p><img src="images/trudare.png" alt="TruDare Logo" style="float:none;width:30px;height:30px; border-radius: 50%;"> Trudare | Truth or Dare Discord.js Bot | <a href="https://github.com/dumprr/Trudare" target="_blank">GitHub Repo</a> (With Guide) </p>
 <p><img src="images/Win95Logo.png" alt="Windows 95 Logo" style="float:none;width:32px;height:30px;"> Windows 95 Key Generator | <a href="https://dumprr.neocities.org/" target="_blank">Try It</a> | <a href="https://github.com/dumprr/Win95CDKey" target="_blank">GitHub Repo</a> </p>
 
-<h2 style="padding-top: 100px;">  </h2>
 
-<footer>
-    <p style="font-size: 15px;"><br>Background provided by <a href="https://github.com/tengbao/vanta">VantaJS</a></p>
-    <p style="font-size: 15px;"> <a href="https://dumprr.neocities.org/parallax.html" target="_blank">Joyboy Has Returned!</a> </p>
-</footer>
-</div>
 
-<!-- Vanta JS Backgrounds Code -->
-<script src="cdn/three.min.js"></script>
-<script src="cdn/vanta.net.min.js"></script>
-<script>
-VANTA.NET({
-  el: "#VantaBackground",
-  mouseControls: true,
-  touchControls: false,
-  gyroControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x9e1adc,
-  points: 16.00,
-  maxDistance: 24.00
-})
-</script>
-<!-- Vanta JS Backgrounds Code -->
 
+
+<!-- bgcode -->
+<script src="animatedlines.js" type="text/javascript"></script>
+<style>
+body {
+  --color-bg: #0e0e0f;
+  --color-bg-2: #141414;
+  --color-bg-3: #800180;
+  --gradient-margin: 800px;
+  color: white
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + var(--gradient-margin));
+  background: radial-gradient( ellipse at 500% 0%, var(--color-bg) 50%, var(--color-bg-2) 80%, var(--color-bg-3) 100%);
+  z-index: -1;
+  transform: translateY(calc(var(--gradient-margin) * -1));
+}
+</style>
+<!-- bgcode -->
 
 
 </body>

@@ -7,8 +7,8 @@
 <title>About Dumprr..?</title>
 </head>
 <body>
-<div id="VantaBackground">
-<h1 style="padding-top: 20px; padding-bottom: 20px; background-color: rgb(138, 43, 226, 0.5); border-style: dashed; border-radius: 15px;"><a class="quick" href="index.html">Home</a> | <a class="quick" href="projects.html">Projects</a> | <a class="quick" href="about.html">About/More</a></h1>
+
+<h1 style="padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; background-color: rgb(138, 43, 226, 0.5); border-style: dashed; border-radius: 15px;"><a class="quick" href="index.html">Home</a> | <a class="quick" href="projects.html">Projects</a> | <a class="quick" href="about.html">About/More</a></h1>
 <!--Epic Glitch Headers-->
 <h1 style="font-family: 'Courier Prime', monospace; color: #ff00ff; text-shadow: -2px 0 #00ff00, 2px 0 #0000ff; animation: glitch 2s infinite; padding-top: 20px; padding-bottom: 20px;">
   more stuff about me 👨‍💻
@@ -35,39 +35,53 @@
 </style>
 <!--End of epic glitch header sorry :(-->
 
-<p></b></p>
+
 
 <p><img src="images/actual github.png" alt="GitHub Logo" style="float:none;width:30px;height:30px;"> Click <a href="https://github.com/dumprr" target="_blank">HERE</a> to check out my GitHub profile!</p>
 <p><img src="images/itch.png" alt="Itch.io Logo" style="float:none;width:30px;height:30px;"> Click <a href="https://itch.io/profile/dumprr" target="_blank">HERE</a> to check out my Itch.io profile!</p>
 <p><img src="images/proton.png" alt="E-Mail Logo" style="float:none;width:30px;height:30px;"> Click <a href="mailto:duhhhmprr@proton.me" target="_blank">HERE</a> to send me an e-mail</p>
 
 
-<h2 style="padding-top: 100px;"> </h2>
-<img src="images/favicon.gif" alt="mario breakdancing">
-<footer>
-    <p style="font-size: 15px;"><br>Background provided by <a href="https://github.com/tengbao/vanta">VantaJS</a></p>
-</footer>
-</div>
-<!-- Vanta JS Backgrounds Code -->
-<script src="cdn/three.min.js"></script>
-<script src="cdn/vanta.net.min.js"></script>
-<script>
-VANTA.NET({
-  el: "#VantaBackground",
-  mouseControls: true,
-  touchControls: false,
-  gyroControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 3.00,
-  color: 0x475ae8,
-  backgroundColor: 0x22153c,
-  points: 16.00,
-  maxDistance: 24.00
-})
-</script>
-<!-- Vanta JS Backgrounds Code -->
+
+<!-- bgcode -->
+<script src="animatedlines.js" type="text/javascript"></script>
+<style>
+body {
+  --color-bg: #0e0e0f;
+  --color-bg-2: #141414;
+  --color-bg-3: #800180;
+  --gradient-margin: 800px;
+  color: white
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + var(--gradient-margin));
+  background: radial-gradient( ellipse at 500% 0%, var(--color-bg) 50%, var(--color-bg-2) 80%, var(--color-bg-3) 100%);
+  z-index: -1;
+  transform: translateY(calc(var(--gradient-margin) * -1));
+}
+</style>
+<!-- bgcode -->
 
 </body>
 </html>

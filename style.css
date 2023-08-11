@@ -4,15 +4,9 @@ body {
     background-color: #23153c;
 }
 
-body {
-  margin: 0;
-}
 
 
-#VantaBackground {
-  width: 100%;
-  height: 100vh;
-}
+
 * {
     text-align: center;
     color: mintcream;
@@ -68,3 +62,38 @@ a:link {
     text-shadow: 3px 3px 20px #1c0c46;
   }
 /* W3 SCHOOLS ONTOP I LOVE W3SCHOOLS */
+
+body {
+  --color-bg: #0e0e0f;
+  --color-bg-2: #141414;
+  --color-bg-3: #800180;
+  --gradient-margin: 800px;
+  color: white
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + var(--gradient-margin));
+  background: radial-gradient( ellipse at 500% 0%, var(--color-bg) 50%, var(--color-bg-2) 80%, var(--color-bg-3) 100%);
+  z-index: -1;
+  transform: translateY(calc(var(--gradient-margin) * -1));
+}
