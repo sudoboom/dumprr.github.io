@@ -35,17 +35,41 @@
 </style>
 <!--End of epic glitch header sorry :(-->
 
+<style>
+  @keyframes glitch-small {
+    0% {
+      text-shadow: -1px 0 #ff0000, 1px 0 #00ff00;
+    }
+    25% {
+      text-shadow: -1px 0 #00ff00, 1px 0 #0000ff;
+    }
+    50% {
+      text-shadow: -1px 0 #0000ff, 1px 0 #ff0000;
+    }
+    75% {
+      text-shadow: -1px 0 #ff0000, 1px 0 #00ff00;
+    }
+    100% {
+      text-shadow: -1px 0 #00ff00, 1px 0 #0000ff;
+    }
+  }
+  </style>
+  <!--End of epic glitch header sorry :(-->
 
 
-<p><img src="images/actual github.png" alt="GitHub Logo" style="float:none;width:30px;height:30px;"> Click <a href="https://github.com/dumprr" target="_blank">HERE</a> to check out my GitHub profile!</p>
-<p><img src="images/itch.png" alt="Itch.io Logo" style="float:none;width:30px;height:30px;"> Click <a href="https://itch.io/profile/dumprr" target="_blank">HERE</a> to check out my Itch.io profile!</p>
-<p><img src="images/proton.png" alt="E-Mail Logo" style="float:none;width:30px;height:30px;"> Click <a href="mailto:duhhhmprr@proton.me" target="_blank">HERE</a> to send me an e-mail</p>
+
+<p class="item github" ><img src="images/actual github.png" alt="GitHub Logo" style="position:relative;top:5px;float:none;width:32px;height:30px;"> Click <a href="https://github.com/dumprr" target="_blank">HERE</a> to check out my GitHub profile!</p>
+<p class="item itchio" ><img src="images/itch.png" alt="Itch.io Logo" style="position:relative;top:5px;float:none;width:33px;height:33px;"> Click <a href="https://itch.io/profile/dumprr" target="_blank">HERE</a> to check out my Itch.io profile!</p>
+<p class="item email" ><img src="images/proton.png" alt="E-Mail Logo" style="position:relative;top:2px;float:none;width:30px;height:30px;"> Click <a href="mailto:duhhhmprr@proton.me" target="_blank">HERE</a> to send me an e-mail</p>
+<p style="padding-top: 10px;"></p>
 <!--just footer ish-->
+<div class="secretdetail">
 <details>
-<summary style="font-size: 20px; padding-top: 30px; font-family: 'Courier Prime', monospace; color: #ff00ff; text-shadow: -2px 0 #00ff00, 2px 0 #0000ff; animation: glitch 10s infinite;">👇 more stuff! </summary>
+<summary class="morestuffsecret" style="font-size: 20px; font-family: 'Courier Prime', monospace; text-shadow: -1px 0 #00ff00, 1px 0 #0000ff; animation: glitch-small 3s infinite;">👇 more stuff! </summary>
 <p style="font-size: 15px;"><a href="https://dumprr.neocities.org/parallax.html" target="_blank">Joyboy Has Returned</a> </p>
 <p style="font-size: 15px;"><a href="404.html" target="_blank">404 page</a> </p>
 </details>
+</div>
 
 <!-- bgcode -->
 <script src="animatedlines.js" type="text/javascript"></script>
