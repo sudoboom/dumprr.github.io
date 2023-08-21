@@ -160,3 +160,30 @@ body {
 .email:hover {
   background-color: rgba(86, 37, 109, 0.745);
 }
+hr.big {
+  border-style: dashed;
+  border-width: 3px;
+  border-radius: 2px;
+  border-top: 3px #efe7ff8e;
+}
+
+hr.smalls {
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 2px;
+  border-top: 2px #7f709e2f;
+}
+
+.quickimage {
+  transition: ease-out 0.3s;
+  scale: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 31px;
+  height: auto;
+}
+
+.quickimage:hover {
+  width: 42px;
+  height: auto;
+}
