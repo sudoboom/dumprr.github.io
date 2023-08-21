@@ -64,6 +64,12 @@ a:link {
     transition: 0.3s ease;
     text-shadow: 3px 3px 20px #1c0c46;
   }
+  a.quick {
+    color: rgb(153, 120, 230);
+  }
+  a.quick:hover {
+    color: rgb(91, 72, 177);
+  }
 /* W3 SCHOOLS ONTOP I LOVE W3SCHOOLS */
 
 body {
