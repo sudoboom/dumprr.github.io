@@ -4,7 +4,10 @@ body {
     background-color: #23153c;
 }
 
-
+:root {
+  --transitionlike: cubic-bezier(0.19, 1, 0.22, 1);
+  --transitiontime: 0.7s;
+}
 
 
 * {
@@ -56,12 +59,12 @@ a:link {
     color: white;
     padding: 10px;
     text-shadow: 0px 0px 10px #170642;
-    transition: color 0.5s ease;
-    transition: 0.3s ease;
+    transition: color 0.5s var(--transitionlike);
+    transition: var(--transitiontime) var(--transitionlike);
   }
   a /*this just sets the transition yup*/ {
-    transition: color 0.3s ease;
-    transition: 0.3s ease;
+    transition: color var(--transitiontime) var(--transitionlike);
+    transition: var(--transitiontime) var(--transitionlike);
     text-shadow: 3px 3px 20px #1c0c46;
   }
   a.quick {
@@ -111,18 +114,18 @@ body {
   padding: 10px;
   border-style: groove;
   border-radius: 10px;
-  transition: ease-out 0.3s;
+  transition: var(--transitionlike) var(--transitiontime);
 }
 
 .item:hover {
   padding: 10px;
   border-style: groove;
   border-radius: 10px;
-  transition: ease-out 0.3s;
+  transition: var(--transitionlike) var(--transitiontime);
 }
 
 .morestuffsecret {
-  transition: ease 0.3s;
+  transition: var(--transitionlike) var(--transitiontime);
   color: #ff00ff;
   text-emphasis-color: #ff00ff;
 }
@@ -137,7 +140,7 @@ body {
   border-style: groove;
   border-radius: 10px;
   background-color: #151c3cbe;
-  transition: ease-out 0.3s;
+  transition: var(--transitionlike) var(--transitiontime);
 }
 
 .secretdetail:hover {
@@ -145,7 +148,7 @@ body {
   border-style: groove;
   border-radius: 10px;
   background-color: #27095fbe;
-  transition: ease-out 0.3s;
+  transition: var(--transitionlike) var(--transitiontime);
 }
 
 .github {
@@ -181,7 +184,7 @@ hr.smalls {
 }
 
 .quickimage {
-  transition: ease-out 0.3s;
+  transition: var(--transitionlike) 1.2s;
   scale: 1;
   padding-left: 12px;
   padding-right: 12px;
