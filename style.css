@@ -196,3 +196,15 @@ hr.smalls {
   width: 42px;
   height: auto;
 }
+
+
+.quickimage-skill {
+  transition: var(--transitionlike) 1.2s;
+  scale: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.quickimage-skill:hover {
+  scale: 1.05;
+}
