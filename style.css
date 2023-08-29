@@ -200,11 +200,28 @@ hr.smalls {
 
 .quickimage-skill {
   transition: var(--transitionlike) 1.2s;
-  scale: 1;
+  width: auto;height: 45px;
   padding-left: 12px;
   padding-right: 12px;
 }
 
 .quickimage-skill:hover {
-  scale: 1.05;
+  width: auto;height: 55px;
+}
+
+.pfp {
+  border-radius: 50%;
+  width: 100px;height: auto;
+  transition: var(--transitionlike) var(--transitiontime);
+}
+
+.pfp:hover {
+  border-radius: 10%;
+  width: 120px;height: auto;
+  transition: var(--transitionlike) 1.2s;
+}
+
+ul, li {
+  justify-content: left;
+  text-align: left;
 }
