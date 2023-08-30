@@ -225,3 +225,13 @@ ul, li {
   justify-content: left;
   text-align: left;
 }
+
+b {
+  font-size: 100%;
+  transition: var(--transitionlike) 1.2s;
+}
+
+b:hover {
+  font-size: 110%;
+  transition: var(--transitionlike) 1.2s;
+}
